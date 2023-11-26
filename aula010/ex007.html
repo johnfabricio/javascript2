@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Somando números</title>
 </head>
 <body>
-    <h1>Somando números</h1>
+    <h1>Somando Números</h1>
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="Somar" onclick="somar">
     <div id="res">Resultado</div>
-
     <script>
-        function somar(){
+        function somar()
+        {
             var tn1 = window.document.getElementById('txtn1')
-            var tn2 = window,document.getElementById('txtn2')
+            var tn2 = window.document.getElementById('txtn2')
             var res = window.document.getElementById('res')
-            var n1=Number(tn1.value)
-            var n2 = Number(tn2.value)
+            var n1 = Number(tn1)
+            var n2 = Number(tn2)
             var s = n1 + n2
-            res.innerHTML = s
+            res.innerText = s
         }
     </script>
 </body>
