@@ -1,4 +1,4 @@
-var vel = 60.1
+var vel = 58
 console.log(`A velocidade do carro é ${vel} km/h`)
 if(vel > 60){
     console.log(`Você ultrapassou o limete de velocidade. MULTADO!`)
