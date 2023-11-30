@@ -21,6 +21,12 @@ section{
 
 }
 
+img#foto{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
 footer{
     text-align: center;
     color: white;
