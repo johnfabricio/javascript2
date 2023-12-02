@@ -4,7 +4,7 @@ function verificar() {
     var fano = document.getElementById('txtano')
     var res = document.querySelector('div#res')
     if (fano.value.lenght == 0 || Number(fano.value) > ano) {
-        window.alert(' Preencha o ano corretamente')
+        window.alert('ERRO! - Preencha o ano corretamente')
     }
     else {
         var fsex = document.getElementsByName('radsexo')
@@ -16,6 +16,7 @@ function verificar() {
         if (fsex[0].checked) {
             if (idade>=0 && idade<18){
                 //criança
+                genero = 'Criança'
                 img.setAttribute('src','crianca-h.jpg')  
             }
             else if(idade<=21){
@@ -58,7 +59,7 @@ function verificar() {
             }
         }
         res.style.textAlign = 'center'
-        res.innerHTML = `<p>Detectamos um ${genero} com ${idade} anos</p>`
+        res.innerHTML = `<p>Detectamos um <strong>${genero}</strong> com ${idade} anos</p>`
         res.appendChild(img)
     }
 
