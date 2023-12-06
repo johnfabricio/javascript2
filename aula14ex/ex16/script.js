@@ -1,15 +1,17 @@
 
 function calcular(){
 
-    var fa1 = window.document.getElementById('a1')
-    var fan = window.document.getElementById('an')
-    var fr = window.document.getElementById('r')
+    var fa1 = document.getElementById('a1')
+    var fan = document.getElementById('an')
+    var fr = document.getElementById('r')
     var a1 = Number(fa1.value)
     var an = Number(fan.value)
-    var r = Number(r.value)
+    var r = Number(fr.value)
     var res = window.document.querySelector('div#res')
     
-    res.innerHTML = `Primeiro ${a1} último ${an} e passo ${r}`
+    for (var c = a1; c<=an; c= c+r){
+        res.innerHTML += `${c} `
+    }
 }
 
 
