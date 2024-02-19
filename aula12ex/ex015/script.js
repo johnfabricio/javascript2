@@ -9,7 +9,7 @@ function verificar() {
     else {
         var fsex = document.getElementsByName('radsexo')
         var idade = ano - Number(fano.value)
-        var img = document.createElement('img')
+        var img = document.createElement('img') //Cria-se dinamicamente uma img usando Javascript
         img.setAttribute('id','foto')
         var genero = ''
     
@@ -58,7 +58,7 @@ function verificar() {
                 img.setAttribute('src','idosa-m.jpg')
             }
         }
-        res.style.textAlign = 'center'
+        res.style.textAlign = 'center' //Centraliza o res usando javascript
         res.innerHTML = `<p>Detectamos um <strong>${genero}</strong> com ${idade} anos</p>`
         res.appendChild(img)
     }
