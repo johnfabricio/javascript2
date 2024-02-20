@@ -11,7 +11,7 @@ function isNumero(n){
     
 }
 function inLista(n, l){
-    if (l.indexOf(Number(n)) != -1){
+    if (l.indexOf(Number(n)) != -1){ //Se a valor n NÃO foi encontrado na lista l(Por isso -1)
         return true
     }else{
         return false
@@ -30,7 +30,7 @@ function adicionar(){
         window.alert('Valor inválido ou já adicionado na lista')
     }
     num.value = ''
-    num.focus()
+    num.focus() //O imput fica vazio e o pontador volta sozinho
 }
 
 function verificar(){
@@ -48,7 +48,7 @@ function verificar(){
                 maior = valores[pos]
             }
             if (valores[pos] < menor){
-                maior = valores[pos]
+                menor = valores[pos]
             }
         }
         media = soma/total

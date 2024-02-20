@@ -8,7 +8,7 @@ function calcular(){
     } else{
         var valor = Number(fvalor.value)
         c = 1
-        res.innerHTML = ''
+        res.innerHTML = '' //Essa parte faz uma limpeza para o próximo cálculo
         while (c <= 10){
             var item = document.createElement('option')
             item.text = `${valor} x ${c} = ${valor*c}`

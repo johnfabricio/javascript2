@@ -7,5 +7,5 @@ function parimpa(n){
     }
 }
 
-let res = parimpa(11)
+let res = parimpa(10)
 console.log(res)
